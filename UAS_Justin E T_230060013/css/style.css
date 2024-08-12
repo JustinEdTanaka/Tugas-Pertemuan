@@ -1,0 +1,583 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding-bottom: 60px; /* Space for fixed footer */
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header styling */
+header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .logo img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #003e80;
+}
+
+/* Main content styling */
+main {
+    padding: 20px 0;
+}
+
+/* Sections styling */
+.home-section,
+.about-section,
+.health-info-section,
+.news-events-section,
+.research-training-section {
+    padding: 2rem 0;
+}
+
+.home-section h1,
+.about-section h1,
+.health-info-section h1,
+.news-events-section h1,
+.research-training-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-section p,
+.about-section p,
+.health-info-section p,
+.news-events-section p,
+.research-training-section p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Article styling */
+article {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+article h2 {
+    color: #0056b3;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+article p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+article a {
+    display: block;
+    text-align: right;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #003e80;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+/* Login and Forgot Password sections */
+.login-section,
+.forgot-password-section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.login-section h1,
+.forgot-password-section h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.login-section label,
+.forgot-password-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-section input[type="text"],
+.login-section input[type="password"],
+.forgot-password-section input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-section button,
+.forgot-password-section button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-section button:hover,
+.forgot-password-section button:hover {
+    background-color: #555;
+}
+
+.login-section p,
+.forgot-password-section p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-section a,
+.forgot-password-section a {
+    color: #333;
+    text-decoration: none;
+}
+
+.login-section a:hover,
+.forgot-password-section a:hover {
+    text-decoration: underline;
+}
+
+.register-section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.register-section h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.register-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.register-section input[type="text"],
+.register-section input[type="email"],
+.register-section input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.register-section button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.register-section button:hover {
+    background-color: #003e80;
+}
+
+.register-section p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-section a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.register-section a:hover {
+    text-decoration: underline;
+}
+
+.health-info-section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.health-info-section h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+}
+
+.health-info-section p {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.health-info-section article {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.health-info-section article h2 {
+    color: #0056b3;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.health-info-section article p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.health-info-section article a {
+    display: inline-block;
+    text-align: right;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.health-info-section article a:hover {
+    color: #003e80;
+}
+
+.news-events-section {
+    background-color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.news-events-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.news-events-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.news-article {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.news-article img.article-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.news-article h2 {
+    font-size: 1.8rem;
+    color: #0056b3;
+    margin-bottom: 1rem;
+}
+
+.news-article p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    display: inline-block;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #0056b3;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #003e80;
+    border-bottom: 1px solid #003e80;
+}
+
+.research-training-section {
+    background-color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.research-training-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.research-training-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.research, .training {
+    margin-bottom: 2rem;
+}
+
+.research h2, .training h2 {
+    font-size: 2rem;
+    color: #0056b3;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.research-article, .training-article {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow: hidden;
+}
+
+.research-article img.article-image, .training-article img.article-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.research-article h3, .training-article h3 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-bottom: 0.5rem;
+}
+
+.research-article p, .training-article p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.read-more {
+    display: inline-block;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #0056b3;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.news-article-section {
+    background-color: #ffffff;
+    padding: 2rem 0;
+}
+
+.news-article {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.news-article h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0056b3;
+}
+
+.article-meta {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.news-article p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.back-to-news {
+    display: inline-block;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #0056b3;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.back-to-news:hover {
+    color: #003e80;
+    border-bottom: 1px solid #003e80;
+}
+
+.research-training-article-section {
+    background-color: #ffffff;
+    padding: 2rem 0;
+}
+
+.research-training-article {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.research-training-article h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0056b3;
+}
+
+.article-meta {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.research-training-article p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.back-to-research {
+    display: inline-block;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #0056b3;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.back-to-research:hover {
+    color: #003e80;
+    border-bottom: 1px solid #003e80;
+}
